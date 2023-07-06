@@ -25,8 +25,15 @@ function createNavigation() {
   contentDiv.appendChild(tabs);
 }
 
+function createInnerContentContainer() {
+  const container = document.createElement('div');
+  container.classList.add('inner-content');
+  contentDiv.appendChild(container);
+}
+
 function init() {
   createNavigation();
+  createInnerContentContainer();
   homePage();
 }
 
