@@ -1,3 +1,7 @@
+import Menu from './menu.svg';
+import Reservation from './reservation.svg';
+import Nutrition from './nutrition.svg';
+
 export default function homePage() {
   createHero();
   createCards();
@@ -30,9 +34,27 @@ function createCards() {
 
   div.classList.add('cards');
 
-  div.appendChild(generateCard('./test.png', 'We Make Pizza', 'For Real!'));
-  div.appendChild(generateCard('./test.png', 'We Make Pizza', 'For Real!'));
-  div.appendChild(generateCard('./test.png', 'We Make Pizza', 'For Real!'));
+  div.appendChild(
+    generateCard(
+      Nutrition,
+      'Dietary Accommodations',
+      'We understand the importance of catering to various dietary preferences and restrictions. Our web page provides detailed information on ingredients and allergens'
+    )
+  );
+  div.appendChild(
+    generateCard(
+      Menu,
+      'Mouthwatering Menu',
+      ' Indulge in a symphony of flavors with our extensive menu options. From appetizers to desserts, each dish is crafted with passion and creativity by our talented culinary team.'
+    )
+  );
+  div.appendChild(
+    generateCard(
+      Reservation,
+      'Reservations Made Easy',
+      'Make a reservation at [Restaurant Name] effortlessly through our web page. Plan your next gathering or reserve a cozy table for an intimate dinner, all with just a few clicks.'
+    )
+  );
 
   innerContentDiv.appendChild(div);
 }
@@ -41,7 +63,7 @@ function generateCard(imgURL, title, text) {
   const div = document.createElement('div');
   div.classList.add('card');
 
-  const img = document.createElement('img');
+  const img = new Image();
   img.src = imgURL;
 
   const h3 = document.createElement('h3');
