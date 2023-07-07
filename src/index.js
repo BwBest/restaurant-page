@@ -1,5 +1,6 @@
 import './style.css';
 import homePage from './home.js';
+import menuPage from './menu.js';
 
 const contentDiv = document.querySelector('#content');
 
@@ -35,7 +36,7 @@ function createInnerContentContainer() {
 function init() {
   createNavigation();
   createInnerContentContainer();
-  homePage();
+  menuPage();
 }
 
 init();
