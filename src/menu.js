@@ -18,6 +18,7 @@ export default function menuPage() {
   );
 
   const innerContentDiv = document.querySelector('.inner-content');
+  innerContentDiv.innerHTML = '';
 
   innerContentDiv.appendChild(title);
   innerContentDiv.appendChild(div);

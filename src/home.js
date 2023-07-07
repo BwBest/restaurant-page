@@ -10,6 +10,7 @@ export default function homePage() {
 
 function createHero() {
   const innerContentDiv = document.querySelector('.inner-content');
+  innerContentDiv.innerHTML = '';
 
   const div = document.createElement('div');
   const titleH1 = document.createElement('h1');

@@ -1,5 +1,6 @@
 export default function contactPage() {
   const innerContentDiv = document.querySelector('.inner-content');
+  innerContentDiv.innerHTML = '';
 
   const title = document.createElement('h1');
   title.textContent = 'Contact Us';

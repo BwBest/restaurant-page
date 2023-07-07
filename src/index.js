@@ -19,7 +19,7 @@ function createNavigation() {
 
   homeBtn.id = 'home';
   menuBtn.id = 'menu';
-  contactBtn.id = 'Contact';
+  contactBtn.id = 'contact';
 
   tabs.appendChild(homeBtn);
   tabs.appendChild(menuBtn);
@@ -41,3 +41,11 @@ function init() {
 }
 
 init();
+
+const homeBtnRef = document.querySelector('#home');
+const menuBtnRef = document.querySelector('#menu');
+const contactBtnRef = document.querySelector('#contact');
+
+homeBtnRef.addEventListener('click', homePage);
+menuBtnRef.addEventListener('click', menuPage);
+contactBtnRef.addEventListener('click', contactPage);
