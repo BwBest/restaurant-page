@@ -151,6 +151,24 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 2rem;
 }
 
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: var(--primary) 2px solid;
+    margin-bottom: 2rem;
+}
+
+.contact iframe{
+    height: 50vh;
+    width: 50vw;
+}
+
+.contact p{
+    font-size: 1.3rem;
+}
+
 .map{
     border: 2px black solid;
     margin: 1rem 2rem;
